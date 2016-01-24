@@ -20,7 +20,7 @@
   ],
   "dependencies": {
     "markdown-it": "^5.0.0",
-    "uslug": "^1.0.3"
+    "slug": "^0.9.1"
   },
   "devDependencies": {
     "ava": "^0.10.0",

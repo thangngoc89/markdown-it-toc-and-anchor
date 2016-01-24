@@ -1,5 +1,5 @@
 import Token from "markdown-it/lib/token"
-import uslug from "uslug"
+import slug from "slug"
 
 const TOC = "@[toc]"
 const TOC_RE = /^@\[toc\]/im
@@ -9,7 +9,8 @@ let headingIds = {}
 const repeat = (string, num) => new Array(num + 1).join(string)
 
 const makeSafe = (string) => {
-  const key = uslug(string) // slugify
+  const key = slug(string) // slugify
+  console.log(key)
   if (!headingIds[key]) {
     headingIds[key] = 0
   }
