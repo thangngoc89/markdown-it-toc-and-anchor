@@ -10,7 +10,7 @@ const repeat = (string, num) => new Array(num + 1).join(string)
 
 const makeSafe = (string) => {
   const key = slug(string) // slugify
-  console.log(key)
+
   if (!headingIds[key]) {
     headingIds[key] = 0
   }
